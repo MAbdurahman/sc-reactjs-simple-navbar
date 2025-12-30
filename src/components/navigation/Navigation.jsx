@@ -1,4 +1,4 @@
-export default function Navigation() {
+export default function Navigation({open}) {
 
    return (
       <div>
