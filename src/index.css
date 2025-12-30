@@ -34,3 +34,50 @@ body {
   width: 100%;
   font-family: 'Mulish', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.utils-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 576px) {
+  .utils-container {
+    max-width: 544px;
+  }
+}
+@media (min-width: 768px) {
+  .utils-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .utils-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .utils-container {
+    max-width: 1144px;
+  }
+}
+@media (min-width: 1400px) {
+  .utils-container {
+    max-width: 1320px;
+  }
+}
