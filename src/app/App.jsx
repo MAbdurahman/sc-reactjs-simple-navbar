@@ -12,12 +12,12 @@ import Navbar from '../components/navigation/Navbar';
 export default function App() {
 
    return (
-      <div className='utils-container'>
+      <div className='utils-container-fluid'>
          <Navbar/>
          <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
-            <Route path='/contact' element={<Products/>}/>
+            <Route path='/products' element={<Products/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/sign-in' element={<SignIn/>}/>
             <Route path='/sign-up' element={<SignUp/>}/>
