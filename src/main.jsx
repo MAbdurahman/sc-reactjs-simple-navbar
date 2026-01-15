@@ -1,4 +1,4 @@
-import React, {StrictMode} from 'react';
+import React, {Fragment, StrictMode} from 'react';
 import { createRoot } from 'react-dom/client';;
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
@@ -18,7 +18,7 @@ const browserRouter = createBrowserRouter([
       element: <App/>,
       children: [
          {
-            path: '',
+            path: 'home',
             element: <Home/>
          },
          {
@@ -52,7 +52,7 @@ const browserRouter = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <Fragment>
     <RouterProvider router={browserRouter}/>
-  </StrictMode>
+  </Fragment>
 )

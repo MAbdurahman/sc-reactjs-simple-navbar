@@ -1,6 +1,6 @@
 import {createGlobalStyle} from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
    *,
    *::after,
    *::before {
@@ -136,6 +136,14 @@ export const GlobalStyle = createGlobalStyle`
       cursor: pointer;
       opacity: 1;
    }
+   
+   .logo_brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;  
+   }
 
    /*===============================================================
           Utilities
@@ -181,5 +189,9 @@ export const GlobalStyle = createGlobalStyle`
          max-width: 1320px;
       }
    }
+
+   .navbar-section {
+      background-color: #434343;
+   }
 `
-export default GlobalStyle;
+export default GlobalStyles;
