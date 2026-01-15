@@ -11,12 +11,13 @@ export const NavbarWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #434343;
+  background: hsl(210, 0%, 18%);
   padding: 1em;
   position: relative;
   @media (max-width: 704px) {
     flex-direction: column;
     padding: 1rem;
+     font-size: 1.5rem;
   }
 `;
 
@@ -30,28 +31,30 @@ export const NavLinkWrapper = styled.div`
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
+   font-weight: 800;
   transition: 0.2s;
-  color: white;
+  color: hsl(210, 0%, 98%);
   margin-left: 2rem;
    
   &:last-child {
-    background: #007dfc;
+    /*background: #007dfc;*/
+    background: hsl(196.18, 77.39%, 54.9%);
     padding: 0.5rem 1rem;
-    border-radius: 30px;
+    border-radius: 24px;
     &:hover {
-      color: white;
+      color: hsl(210, 0%, 98%)
     }
     &.${(props) => props.activeclassname} {
-      color: white;
+      color: hsl(210, 0%, 98%);
     }
   }
 
   &.${(props) => props.activeclassname} {
-    color: #007dfc;
+    color: hsl(196.18, 77.39%, 54.9%);
   }
 
   &:hover {
-    color: #007dfc;
+    color: hsl(196.18, 77.39%, 54.9%);
   }
 
   @media (max-width: 704px) {
@@ -65,8 +68,8 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   position: absolute;
   right: 20px;
   top: 21px;
-  color: white;
-  font-size: 1.8rem;
+  color: hsl(210, 0%, 98%);;
+  font-size: 2rem;
   cursor: pointer;
   @media (max-width: 704px){
     display: block;

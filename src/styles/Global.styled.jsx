@@ -191,7 +191,7 @@ export const GlobalStyles = createGlobalStyle`
    }
 
    .navbar-section {
-      background-color: #434343;
+       background-color: hsl(210, 0%, 18%);
    }
 `
 export default GlobalStyles;

@@ -4,7 +4,7 @@ export default function MetaData({title}) {
 
    return (
       <Helmet>
-         <title>{`Shopping / ${title}`}</title>
+         <title>{`Shop | ${title}`}</title>
       </Helmet>
 
    );
